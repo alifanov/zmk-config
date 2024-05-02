@@ -16,6 +16,14 @@
             tapping-term-ms = <300>;
             bindings = <&shifted>, <&kp>;
         };
+        hm: homerow_mods {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <150>;
+            quick-tap-ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+        };
     };
 
     macros {
@@ -70,9 +78,9 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&none  &as Q  &as W  &as E     &as R  &as T        &as Y    &as U  &as I          &as O    &as P     &none
-&none  &as A  &as S  &as D     &as F  &as G        &as H    &as J  &as K          &as L    &kp SEMI  &none
-&none  &as Z  &as X  &as C     &as V  &as B        &as N    &as M  &kp COMMA      &kp DOT  &kp FSLH  &none
+&none  &kp Q  &kp W  &kp E     &kp R  &kp T        &kp Y    &kp U  &kp I          &kp O    &kp P     &none
+&none  &hm LCTRL A &hm LGUI S &hm LALT D &hm LSHIFT F  &kp G        &kp H    &hm RCTRL J &hm RGUI K &hm RALT L &hm RSHIFT SEMI  &none
+&none  &kp Z  &kp X  &kp C     &kp V  &kp B        &kp N    &kp M  &kp COMMA      &kp DOT  &kp FSLH  &none
                      &kp LGUI  &mo 2  &kp SPACE    &kp RET  &mo 1  &kp BACKSPACE
             >;
         };
