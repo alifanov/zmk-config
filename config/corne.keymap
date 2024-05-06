@@ -66,6 +66,11 @@
             bindings = <&kp ESC>;
             key-positions = <19 20>;
         };
+
+        lang_change {
+            bindings = <&kp LG(SPACE)>;
+            key-positions = <16 19>;
+        };
     };
 
     keymap {
