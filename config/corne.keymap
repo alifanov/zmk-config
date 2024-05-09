@@ -99,9 +99,9 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&none  &none  &kp N4  &kp N5    &kp N6  &none        &none     &none     &none   &none      &none  &none
-&none  &none  &kp N1  &kp N2    &kp N3  &kp N0       &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &none  &none
-&none  &none  &kp N7  &kp N8    &kp N9  &none        &none     &none     &none   &none      &none  &none
+&none  &none  &kp N4  &kp N5    &kp N6  &none        &none     &none     &none   &none      &none      &none
+&none  &none  &kp N1  &kp N2    &kp N3  &kp N0       &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &kp RCTRL  &none
+&none  &none  &kp N7  &kp N8    &kp N9  &none        &none     &none     &none   &none      &none      &none
                       &kp LGUI  &trans  &kp SPACE    &kp RET   &trans    &none
             >;
         };
@@ -114,10 +114,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&none  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET          &kp AMPS  &kp ASTRK          &kp EQUAL       &kp PLUS  &none
-&none  &trans    &trans  &trans    &trans    &trans       &kp SINGLE_QUOTE   &kp LPAR  &kp LBKT           &kp LEFT_BRACE  &kp BSLH  &none
-&none  &trans    &trans  &trans    &trans    &trans       &kp DOUBLE_QUOTES  &kp RPAR  &kp RIGHT_BRACKET  &kp RBRC        &kp PIPE  &none
-                         &kp LGUI  &trans    &kp SPACE    &kp RET            &trans    &none
+&none  &none            &none        &none     &none       &none          &kp CARET          &kp AMPS  &kp ASTRK          &kp EQUAL       &kp PLUS  &none
+&none  &kp EXCLAMATION  &kp AT_SIGN  &kp HASH  &kp DOLLAR  &kp PERCENT    &kp SINGLE_QUOTE   &kp LPAR  &kp LBKT           &kp LEFT_BRACE  &kp BSLH  &none
+&none  &trans           &trans       &trans    &trans      &trans         &kp DOUBLE_QUOTES  &kp RPAR  &kp RIGHT_BRACKET  &kp RBRC        &kp PIPE  &none
+                                     &kp LGUI  &trans      &kp SPACE      &kp RET            &trans    &none
             >;
         };
     };
